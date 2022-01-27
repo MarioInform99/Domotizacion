@@ -1,0 +1,52 @@
+<html>
+
+<body>
+  <svg width="600" height="600">
+
+    <rect fill="#8C5E58" x="50" y="150" height="50" width="100"/>
+    <rect width="20" height="30" fill="#0D1F22"
+      x="80" y="170"/>
+
+    <rect fill="#2CEAA3" width="200" height="10" x="0" y="200" />
+    <circle cx="120" cy="60" r="10">
+      <animate attributeName="cy" from="60" to="-10"
+      begin="botonInicio.click" dur="1s"
+      repeatCount="indefinite"
+      end="botonFin.click"/>
+    </circle>
+
+    <path id="camino" d="M50,150 L100,80 L150,150 Z" fill="#6B6570"
+     />
+    <rect fill="#6B8577" x="110" y="70" height="60" width="20"/>
+     <circle r="5" fill="red">
+       <animateMotion dur="5s" repeatCount="indefinite"
+         begin="botonInicio.click" end="botonFin.click">
+          <mpath href="#camino"/>
+        <animateMotion/>
+     </circle>
+
+<g id="botonInicio">
+<rect x="0" y="250" fill="grey" width="60" height="20"/>
+<text x="4" y="265">
+Empieza
+</text>
+</g>
+<g id="botonFin">
+  <rect x="0" y="290" fill="grey" width="60" height="20"/>
+  <text x="4" y="305">
+  Fin
+  </text>
+  </g>
+</g>
+
+
+    <svg>
+
+
+</body>
+
+
+
+
+
+<html>

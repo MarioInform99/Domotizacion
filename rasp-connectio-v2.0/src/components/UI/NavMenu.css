@@ -1,0 +1,47 @@
+*{
+    color:white;
+}
+a,li{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar{
+    position:absolute;    
+    width: 100%;
+    z-index:100;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.Menu{
+    width: 90%;
+}
+.Menu ul{
+    margin: 1%;
+    padding:1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Menu ul li{
+    margin: 0 5% 0 0 ;
+}
+/* form{
+    position: relative;
+    background-color: rgb(54,57,63);
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 10px;
+  left: 25%;
+  width: 80%;
+  height: 70%;
+  align-items: center;
+    color:black;
+} */
+input,select, option{
+    color:black;
+
+}

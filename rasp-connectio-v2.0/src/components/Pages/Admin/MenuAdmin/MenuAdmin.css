@@ -1,0 +1,60 @@
+
+
+.contanierMenu{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:black;
+}
+.containerMensaje{
+    position: absolute;
+    left: 10%;
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    top: 10%;
+}
+.mensajesUser, li{
+    color:black;    
+}
+
+a{
+    text-decoration:none;
+        color:black;
+}
+.headerAdmin{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 9%;
+    width: 91%;    
+    background-color: #363636;
+    height: 9%;
+}
+.headerAdmin .notificaciones{
+    position: absolute;
+    left: 75%;
+    margin: 1%;
+}
+.headerAdmin .iconAjustes{
+    position: absolute;
+    left: 70%;
+    margin: 1%; 
+
+}
+.headerAdmin .foto{
+    position: relative;
+    border: 5px solid white;
+    border-radius: 50%;
+    left: 80%;
+}
+.headerAdmin a{
+    cursor: pointer;
+}
+
+/**
+    Home admin->mapa
+    Usuarios
+    Raspberrys
+*/

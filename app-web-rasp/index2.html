@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 105%;
+            z-index: -100;
+        }
+        svg{
+            position: relative;
+        }
+        svg[id="espiral"]{
+            border: 1px solid black;
+            position: absolute;
+            top: 10px;
+            left: 550px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/2036.jpg" alt="Casa"/>
+    <svg  x="20" y="400" style="border: 1px solid black;" width="100%" height="650" >
+        <!-- Zona de rocas moviendose-->
+        <g>
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="500" y="500">
+                <animateTransform  attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+            </image>
+        </g>
+        <g >
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="600" y="200">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra2"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra2" d="m0,0 h100, h-100" />
+        <g>
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="700" y="500">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite" >
+                    <mpath href="#piedra3"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra3" d="m0,0 l100,-100" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="0" y="200">
+                <animateMotion dur="20s" fill="freeze" repeatCount="indefinite" stroke="none">
+                    <mpath href="#piedra4"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra4" d="m-10,-10 h100, l100,-100 l100,100 h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="100" y="300">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra5"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra5" d="m0,0 h1000, h-1000" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="200" y="400">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra6"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra6" d="m0,0 h100, h-100" />
+        <!--*********************************************************-->
+        <!-- Zona de rutas -->
+
+
+        <!--***********************************************-->
+        <!-- Espiral para la casa, en la parte superior de la chimenea-->
+        <!-- <g transform="translate(15, 10)">
+            <path  x="0" y="0" d="m600,50
+            c0,0 40,-35 100,-10" 
+            stroke="white" stroke-width="3" fill="none" 
+            >
+            <animateTransform  attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+        </path>
+            <path x="0" y="0" d="m780, 50
+             c0,0 50,25 40,80"
+             stroke="white" stroke-width="3" fill="none"
+            />
+
+        </g>
+        <!-- Ruta de vueltas
+        <path id="espiral"
+        d="
+           M 100, 100
+           m -75, 0
+           a 75,75 0 1,0 150,0
+           a 75,75 0 1,0 -150,0
+           "
+           fill="none"
+        /> -->
+        <!-- <defs>
+            <filter id="f1" x="0" y="0">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+            </filter>
+          </defs>
+          <rect width="90" height="90" stroke="green" stroke-width="3"
+          fill="yellow" filter="url(#f1)" />  -->
+     </svg><!--
+    <svg width="350" height="200" id="espiral">
+        <!-- <g transform="translate(125, 100)"> 
+          <path  x="0" y="0" d="m0,0
+            c0,0 40,-35 100,-10" 
+            stroke="white" stroke-width="3" fill="none" />
+            <animateTransform  attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+        </g> 
+        <g>
+            <circle id="circulo1" cx="100" cy="100"
+            r="50" stroke="red" stroke-width="2" fill="none">
+                <animate id="circuloA"
+                    attributeType="XML"
+                    attributeName="stroke-dasharray"
+                    from="0 472"
+                    to="472 0"
+                    begin="0;circuloB.end"
+                    dur="5s"
+                    fill="freeze"/>
+                <animate id="circuloB"
+                attributeType="XML"
+                attributeName="stroke-dasharray"
+                from="472 0"
+                to="0 472"
+                begin="circuloA.end"
+                dur="5s"
+                fill="freeze"/>
+            </circle> 
+        </g> -->
+      <!-- </svg>
+      <!--**********************************-->
+
+      <!--
+       <svg height="800px" width="800px">
+        <circle id="circulo" cx="130" cy="130"
+        r="75" stroke="red" stroke-width="40"
+        fill="white">
+        <animate id="circuloA"
+            attributeType="XML"
+            attributeName="stroke-dasharray"
+            from="0 100 200 300"
+            to="300 200 100 0"
+            begin="0s;circuloB.end"
+            dur="5s"
+            fill="freeze"/>
+            <animate id="circuloB"
+                attributeType="XML"
+                attributeName="stroke-dasharray"
+                from="300 200 100 0"
+                to="0 100 200 300"
+                begin="circuloA.end"
+                dur="5s"
+                fill="freeze"/>
+        </circle>
+      </svg> 
+      <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+        <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+        <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle> -->
+    <!-- </svg> -->
+</body>
+</html>

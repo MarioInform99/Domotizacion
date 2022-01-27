@@ -1,0 +1,20 @@
+#root{
+    border: 1px solid black;
+}
+.containers{
+    border: 1px solid black;
+    width: 15%;
+    height: 41.6em;
+}
+.containerMenu{
+    margin-left: 1%;
+    margin-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid blue;
+}
+.containerMenu div{
+    position: relative;
+    left: 20%;
+}

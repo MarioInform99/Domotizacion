@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Ejercicio 2 - Alejandro Urbiztondo Olmo - Boostrap</title>
+    <style>
+        div{
+          font-weight:bold;
+        }
+        .final{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+        }
+        .rojo{
+            background-color: #ED1B24;
+            text-align: center;
+            height: 50px;
+        }
+        .blanco{
+            border: 3px solid black;
+            background-color: white;
+            height: 60px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .naran{
+            background-color: orange;
+            height: 130px;
+        }
+        .ama{
+            background-color: yellow;
+            height: 140px;
+        }
+        .rosa{
+            background-color: pink;
+            height: 60px;
+        }
+        .verde{
+            background-color: #23B14D;
+            height: 85px;
+        }
+        .azul{
+            background-color: #00A3E8;
+            height: 70px;
+        }
+        #content{
+            padding-left: 8px;
+        }
+        @media (max-width: 768px) and (min-width: 568px){
+            .blanco{
+                background-color: black;
+                color: white;
+            }
+            #head2{
+                background-color: #FFC90C;
+            }
+            #head:after{
+                content: "1";
+            }
+            #head{
+                display: flex;
+                justify-content: flex-start;
+            }
+            #l2{
+                display: flex;
+                align-items: flex-end;
+            }
+            .verde{
+                display: flex;
+                justify-content: flex-end;
+            }
+            #bus2{
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+        @media (max-width: 578px){
+            #bus{
+                display: flex;
+                align-items: flex-end;
+            }
+            #head{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .verde{
+                background-color: #C2C2C2;
+            }
+            #Foo:after{
+                content: "1";
+            }
+        }
+        @media (min-width: 768px){
+            .verde{
+                height: 210px;
+            }
+            .verde, .naran{
+                display: flex;
+                align-items: flex-end;
+            }
+            #l4{
+                display: flex;
+                align-items: flex-start;
+            }
+            .rojo{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        @media (max-width: 768px){
+            #bus:after{
+                content: "1";
+            }   
+        }
+        
+    </style>
+</head>
+<body class="container px-0">
+    <div class="row gx-2 mt-2">
+      <div class="col-md-12 col-12 col-sm-6">
+        <div class="rojo final" id="head">Cabecera</div>
+      </div>
+      <div class="col-6 d-none d-sm-block d-md-none">
+        <div class="rojo final" id="head2">Cabecera2</div>
+      </div>
+    </div>
+    <div class="row gx-2 mt-2">
+      <div class="col-md-12 col-6  order-sm-1 order-2">
+        <div class="naran final" id="bus">Buscador</div>
+      </div>
+      <div class="col-6 d-md-none d-block order-sm-2 order-1">
+        <div class="naran final" id="bus2">Buscador2</div>
+      </div>
+    </div>
+    <div class="row" id="content">
+        <div class="row gx-2 mt-1 gy-2 col-md-8 col-12">
+            <div class="col-6 order-4 order-sm-1">
+                <div class="ama final" id="l1">A</div>
+            </div>
+            <div class="col-6 order-3 order-sm-2">
+                <div class="ama final" id="l2">B</div>
+            </div>
+            <div class="col-6 d-block d-sm-none d-md-block order-2 order-md-3">
+                <div class="ama final" id="l3">C</div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-6 order-1 order-sm-4">
+                <div class="ama final" id="l4">D</div>
+            </div>
+        </div>
+        <div class="row gx-2 mt-1 gy-2 col-md-4 col-12">
+            <div class="col-12 order-sm-3"><div class="verde final">ASIDE</div></div>
+            <div class="col-12 order-sm-4 d-md-block d-none"><div class="azul final">ARTICLE</div></div>
+        </div>
+    </div>
+    <div class="row gx-2 mt-2">
+      <div class="col-6 col-sm-12 col-md-10">
+        <div class="blanco final" id="Foo"> Footer  </div>
+      </div>
+      <div class="col-6 d-block d-sm-none">
+        <div class="blanco final" id="Foo2">Footer2</div>
+      </div>
+      <div class="col-2 d-none d-md-block">
+        <div class="rosa final" id="bus2"></div>
+      </div>
+    </div>
+</body>
+</html>

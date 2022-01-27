@@ -1,0 +1,89 @@
+  <svg  x="20" y="400" style="border: 1px solid black;" width="100%" height="650" >
+        <!-- Zona de rocas moviendose-->
+        <g>
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="500" y="500">
+                <animateTransform  attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+            </image>
+        </g>
+        <g >
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="600" y="200">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra2"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra2" d="m0,0 h100, h-100" />
+        <g>
+            <image href="./img/piedra1-sinfondo-removebg-preview.png" x="700" y="500">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite" >
+                    <mpath href="#piedra3"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra3" d="m0,0 l100,-100" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="0" y="200">
+                <animateMotion dur="20s" fill="freeze" repeatCount="indefinite" stroke="none">
+                    <mpath href="#piedra4"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra4" d="m-10,-10 h100, l100,-100 l100,100 h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10
+        h-10 l-5,-5 l-5,5 h-10 l-5,5 l-5,-5 h-10" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="100" y="300">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra5"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra5" d="m0,0 h1000, h-1000" />
+        <g>
+            <image href="./img/piedra1-removebg-preview.png" x="200" y="400">
+                <animateMotion dur="5s" fill="freeze" repeatCount="indefinite">
+                    <mpath href="#piedra6"/>
+                </animateMotion>
+            </image>
+        </g>
+        <path id="piedra6" d="m0,0 h100, h-100" />
+        <!--*********************************************************-->
+        <!-- Zona de rutas -->
+
+
+        <!--***********************************************-->
+        <!-- Espiral para la casa, en la parte superior de la chimenea-->
+        <!-- <g transform="translate(15, 10)">
+            <path  x="0" y="0" d="m600,50
+            c0,0 40,-35 100,-10" 
+            stroke="white" stroke-width="3" fill="none" 
+            >
+            <animateTransform  attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+        </path>
+            <path x="0" y="0" d="m780, 50
+             c0,0 50,25 40,80"
+             stroke="white" stroke-width="3" fill="none"
+            />
+
+        </g>
+        <!-- Ruta de vueltas
+        <path id="espiral"
+        d="
+           M 100, 100
+           m -75, 0
+           a 75,75 0 1,0 150,0
+           a 75,75 0 1,0 -150,0
+           "
+           fill="none"
+        /> -->
+        <!-- <defs>
+            <filter id="f1" x="0" y="0">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+            </filter>
+          </defs>
+          <rect width="90" height="90" stroke="green" stroke-width="3"
+          fill="yellow" filter="url(#f1)" />  -->
+     </svg>

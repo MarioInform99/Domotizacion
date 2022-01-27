@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <style>
+        img {
+           z-index: -1;
+           position: absolute;
+       }
+        </style>
+    </head>
+    <body>
+        <!-- Se pide crear un circuito animado con dos coches. De tal forma que inicialmente los dos coches están en la linea de salida. Empezará inicialmente el coche rojo, y realizará una vuelta completa al circuito. El coche verde, empezará el recorrido un segundo antes que llegue el coche rojo a la linea de meta (este último parará al llegar). Una vez que llegue el coche verde a la meta, también iniciará la carrera el coche rojo un segundo antes de que llegue el verde, y así sucesivamente. La animación no tiene fin. La dirección de carrera es en el sentido contrario a las agujas del reloj.
+ -->
+        
+        <img src="circuito.jpg" alt="circuito" id="circuito">
+         
+        <svg width="600" height="600" x="30" y="40">
+            <image id="cocheVerde" href="cocheVerde.png" x="223" y="412" width="10%" height="10%">
+            
+                <animateMotion id="animeGreen" dur="4s"  begin="animeRed.end-1s">
+                    <mpath href="#camino"/>
+                </animateMotion>
+            
+            </image>
+            
+            <image id="cocheRojo" href="cocheRojo.png" x="223" y="385" width="10%" height="10%">
+            <animateMotion id="animeRed" dur="4s" begin="0;animeGreen.end-1s" >
+                    <mpath href="#camino"/>
+                </animateMotion>
+            </image>
+            
+            <path id="camino" d="m0,0 h175 q10,0 20,-100 q-100,-90 0,-95 q100,-100 -150,-91 v170 q-100,20 -93,-14 v-70 q0,0 -57,-34 q-30,0 -63,46 v130 q0,20 54,44 z"/>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+.ajusteDiv{
+    border: 1px solid blue;
+    position: absolute;
+    left: 68%;
+    top:100%;
+}
+.ajusteDiv a{
+    cursor: pointer;
+}

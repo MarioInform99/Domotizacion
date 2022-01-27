@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML &amp; CSS: Curso práctico avanzado</title>
+
+<style>
+       img {
+           z-index: -1;
+           position: absolute;
+       }
+       svg {
+           z-index: -1;
+       }
+       #titulo {
+           position: absolute;
+           margin-left: 150px;
+           margin-top: 50px;
+       }
+   </style>
+<body>
+ <img src="circuito.png" alt="Circuito">
+         <svg width="600" height="600">
+
+          <image id="imagen" href="coche.png"
+          x="171" y="28"
+          width="15" height="15">
+
+          <animateMotion dur="5s"
+          fill="freeze">
+          <mpath href="#camino"/>
+         </animateMotion>
+        </image>
+         <path id="camino" d="m0,0
+         h104
+         q90,41 0,84
+         q-30,-13 -44,-19
+         q-16,6  -46,18
+         h-24
+         q-30,-13 -44,-19
+         q-16,6  -46,18
+         q-90,-50  0,-80 Z
+         "/>
+
+         </svg>
+         
+        <svg height="800px" width="800px">
+    <circle id="circulo" cx="130" cy="130"
+    r="75" stroke="red" stroke-width="40"
+    fill="white">
+    <animate id="circuloA"
+        attributeType="XML"
+        attributeName="stroke-dasharray"
+        from="0 472"
+        to="472 0"
+        begin="0s;circuloB.end"
+        dur="5s"
+        fill="freeze"/>
+        <animate id="circuloB"
+            attributeType="XML"
+            attributeName="stroke-dasharray"
+            from="472 0"
+            to="0 472"
+            begin="circuloA.end"
+            dur="5s"
+            fill="freeze"/>
+    </circle>
+  </svg>
+</body>
+</html>

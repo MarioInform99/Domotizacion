@@ -1,0 +1,9 @@
+<svg width="250" height="200">
+  <g transform="translate(125, 100)"> 
+    <circle r="70" style="fill:none;stroke:black"></circle>
+    <circle r="40" style="fill:none;stroke:black; stroke-width:40; stroke-dasharray:42, 42;"><!-- 9, 14, 18, 42-->
+      <animateTransform attributeType="xml" attributeName="transform" type="rotate" by="360" dur="5s" repeatCount="indefinite"></animateTransform>
+    </circle>
+    <circle r="4" style="fill:red"></circle>
+  </g>
+</svg>

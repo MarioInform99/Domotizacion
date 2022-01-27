@@ -1,0 +1,32 @@
+.MenuAdmin{
+    position: fixed;
+    width: 9%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(
+        #0F0F0F,
+        #363636
+    );
+}
+.MenuAdmin ul{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 105%;
+}
+.MenuAdmin ul li{
+    padding: 50% 70% 0 0;
+    margin: 10%;
+
+}
+.MenuAdmin ul li:first-child{
+    padding: 15% 70% 70% 0;
+    margin: 10%;
+}
+.MenuAdmin ul li:hover{
+    transform: scale(1.5);
+}
+.MenuAdmin ul li a:active{
+    transform: scale(1.5);
+}

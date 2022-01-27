@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS  H220 Q50,300 155,320-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <svg height="800px" width="800px">
+
+      <rect x ="100" y ="400" height ="15" width ="200"  fill="black"/>
+
+      <path d="m200,400 v-73 q-90,-75 -70,-161 h145 q24,100 -74,160 "
+      stroke-width="20" stroke="#000000" fill="none"/>
+      <path d="m138,176 h129 q20,80 -66,138 q-75,-65 -63,-139" fill="blue"
+      stroke-witdh="30" stroke="blue">
+        <animate id="animate1"
+          attributeName="d"
+          attributeType="XML"
+          values="m138,200 h129 q10,80 -66,114 q-75,-65 -63,-115;
+          m138,224 h129 q8,50 -66,90 q-68,-65 -63,-90;"
+          dur="5s"
+          begin="empieza.click"
+          fill="freeze"/>
+         <animate id="animate2"
+           attributeName="d"
+           attributeType="XML"
+           values="m138,224 h129 q8,50 -66,90 q-68,-65 -63,-90;
+           m138,200 h129 q10,80 -66,114 q-75,-65 -63,-115;
+           m138,176 h129 q20,80 -66,138 q-75,-65 -63,-139"
+           dur="5s"
+           begin="fin.click"
+          fill="freeze"/>
+      </path>
+      <g id="empieza">
+      <rect x="50" y="500" height="30" width="70" fill="#FFFFFF" stroke="black"
+      stroke-width="7"/>
+      <text x="55" y="520">Empieza</text>
+      </g>
+      <g id="fin">
+      <rect x="50" y="550" height="30" width="70" fill="#FFFFFF" stroke="black"
+      stroke-width="7"/>
+      <text x="55" y="570">Fin</text>
+      </g>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
